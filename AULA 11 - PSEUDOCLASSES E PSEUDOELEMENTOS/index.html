@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Acesso</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="imgBx">
+        <img src="./images/signup.jpg">
+        </div>
+        <div class="contentBx">
+            <div class="formBx">
+                <h2>Login</h2>
+                <form action="/registrar" method="POST">
+                    <div class="inputBx">
+                        <span>Usuário</span>
+                        <input type="email" name="usuario">
+                    </div>
+                    <div class="inputBx">
+                        <span>Senha</span>
+                        <input type="password" name="senha">
+                    </div>
+                    <div class="remember">
+                            <input type="checkbox" name="lembrarme">
+                            <label for="radio-lembrarme">Lembrar-me</label>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" value="Entrar" name="entrar">
+                    </div>
+                    <div class="inputBx">
+                        <p>Ainda não possui usuário e senha? <a href="#">Crie uma conta</a></p>
+                    </div>
+                </form>
+                <h3>Ou experimente entrar com suas redes sociais:</h3>
+                <ul class="redes_sociais">
+                    <li><img src="./images/facebook_icon.svg" title="Entrar com o Facebook"></li>
+                    <li><img src="./images/instagram_icon.svg" title="Entrar com o Instagram"></li>
+                    <li><img src="./images/twitter_icon.svg" title="Entrar com o Twitter"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

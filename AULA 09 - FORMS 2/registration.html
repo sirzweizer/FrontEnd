@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1>
+        <form action="/registrar" method="POST">
+            <h3>Dados pessoais</h3>
+            <div>
+                <label for="primeiro-nome">Primeiro nome:</label>
+                <input type="text" id="primeiro-nome" name="primeiro-nome" 
+                value="" placeholder="Primeiro nome">
+            </div>
+            <div>
+                <label for="segundo-nome">Segundo nome:</label>
+                <input type="text" id="segundo-nome" name="segundo-nome" 
+                value="" placeholder="Segundo nome">
+            </div>
+            <div>
+                <label for="genero">Gênero:</label>
+                <select name="seleciona-genero">
+                    <option value="nulo" selected></option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outros">Outros</option>
+                  </select>
+            </div>
+
+            <h3>Dados de correspondência</h3>
+            <div>
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" 
+                value="" placeholder="endereco">
+            </div>
+            <div>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" 
+                value="" placeholder="telefone">
+            </div>
+
+            <h3>Dados de acesso</h3>
+           <div>
+                <label for="email-telefone">Email:</label>
+                <input type="email" id="email-telefone" name="email-telefone" 
+                value="" placeholder="Email ou número de telefone">
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha"
+                value="" placeholder="Senha"
+                minlength="8" required>
+            </div>
+            <button type="Submit">Cadastrar</button>
+        </form>
+</body>
+</html>
+
